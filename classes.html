@@ -26,6 +26,13 @@ https://templatemo.com/tm-569-edu-meeting
 -->
   </head>
 
+<style>
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+</style>
+
 <body>
 
 
@@ -66,9 +73,9 @@ https://templatemo.com/tm-569-edu-meeting
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="meetings.html" class="active">Meetings</a></li>
-                          <li><a href="index.html">Apply Now</a></li>
+                          <li> <a href="index.html">Home</a></li>
+                          <li><a href="meetings.html">Colloquiums</a></li>
+                          <li class="scroll-to-section"><a href="#TAs">Office Hours and TAs</a></li>
                           <li class="has-sub">
                               <a href="javascript:void(0)">Pages</a>
                               <ul class="sub-menu">
@@ -76,8 +83,7 @@ https://templatemo.com/tm-569-edu-meeting
                                   <li><a href="meeting-details.html">Meeting Details</a></li>
                               </ul>
                           </li>
-                          <li><a href="index.html">Courses</a></li>
-                          <li><a href="index.html">Contact Us</a></li>
+                          <li> <a href="classes.html">Offered Courses</a></li>
                       </ul>
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -101,11 +107,34 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
   </section>
 
-  <section class="meetings-page" id="meetings">
-    <div class="container">
+  <section class="classes-table" id="classes">
+      <table>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Prerequisite</th>
+        </tr>
+        <tr>
+          <td>CS111</td>
+          <td>Intro to Computer Science I</td>
+          <td>Introduction to computer science with an emphasis on fundamental programming constructs, algorithmic thinking and problem-solving, fundamental data structures, and recursion. Students implement projects using the Java programming language. This course is the usual beginning course for students planning to pursue a major or minor in computer science.</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>CS112</td>
+          <td>Intro to Computer Science II</td>
+          <td>Second course in the introductory sequence for computer science majors and students interested in the principles of programming. Special attention is given to object-oriented program design methods, algorithms, and elementary data structures.</td>
+          <td>CS111</td>
+        </tr>
+        <tr>
+          <td>CS216</td>
+          <td>Data Structures</td>
+          <td> Introduction to major data structures and some of their applications. Topics include sets, queues, stacks, linked lists, string processing, trees, graphs, arrays, tables, files, and an introduction to the analysis of algorithms.</td>
+          <td>CS112</td>
+        </tr>
+      </table>
       
-      
-    </div>
     <div class="footer">
       <p>Copyright © 2021 CS Web Capstone, All Rights Reserved.</p>
     </div>
