@@ -23,16 +23,16 @@ Table of contents
 12. portfolio
 
 --------------------------------------------- */
-/* 
+/*
 ---------------------------------------------
 font & reset css
---------------------------------------------- 
+---------------------------------------------
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-/* 
+/*
 ---------------------------------------------
 reset
---------------------------------------------- 
+---------------------------------------------
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
@@ -118,10 +118,10 @@ img {
   overflow: hidden;
 }
 
-/* 
+/*
 ---------------------------------------------
 global styles
---------------------------------------------- 
+---------------------------------------------
 */
 html,
 body {
@@ -153,6 +153,10 @@ body {
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
+}
+
+.item {
+  margin-top: 50px
 }
 
 .main-button-red a {
@@ -190,7 +194,7 @@ body {
 .section-heading h2 {
   line-height: 40px;
   margin-top: 0px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(250,250,250,0.15);
   font-size: 22px;
@@ -200,10 +204,10 @@ body {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 header
---------------------------------------------- 
+---------------------------------------------
 */
 
 .sub-header {
@@ -676,10 +680,10 @@ header
 }
 
 
-/* 
+/*
 ---------------------------------------------
 banner
---------------------------------------------- 
+---------------------------------------------
 */
 
 .main-banner {
@@ -710,6 +714,7 @@ banner
     bottom: 0;
     right: 0;
     width: 100%;
+    margin-bottom: 10px
 }
 
 .main-banner .caption {
@@ -814,7 +819,7 @@ services
   top: 50%;
   transform: translateY(-25px);
 }
-    
+
 .services .owl-nav .owl-prev{
   margin-right: 10px;
   outline: none;
@@ -977,6 +982,7 @@ section.upcoming-meetings .categories .main-button-red a {
   padding: 30px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  height: 250px
 }
 
 .meeting-item .down-content .date {
@@ -1063,7 +1069,7 @@ section.apply-now .item p {
   border-bottom: none;
 }
 .accordion-head {
-  padding: 20px;  
+  padding: 20px;
   font-size: 18px;
   font-weight: 700;
   color: #1f272b;
@@ -1100,10 +1106,10 @@ section.apply-now .item p {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 courses
---------------------------------------------- 
+---------------------------------------------
 */
 
 section.our-courses {
@@ -1112,7 +1118,7 @@ section.our-courses {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 50px;
   padding-bottom: 130px;
 }
 
@@ -1124,7 +1130,7 @@ section.our-courses {
   padding: 25px;
   font-size: 18px;
   color: #1f272b;
-  text-align: center; 
+  text-align: center;
   border-bottom: 1px solid #eee;
 }
 
@@ -1181,7 +1187,7 @@ section.our-courses {
   height: 8px;
   border-radius: 4px;
 }
-    
+
 .our-courses .owl-nav .owl-prev{
   margin-right: 10px;
   outline: none;
@@ -1318,10 +1324,10 @@ section.our-facts .video img {
 }
 
 
-/* 
+/*
 ---------------------------------------------
 contact us
---------------------------------------------- 
+---------------------------------------------
 */
 
 section.contact-us {
@@ -1460,7 +1466,7 @@ section.heading-page {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
-  padding-bottom: 110px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
@@ -1496,7 +1502,7 @@ section.meetings-page {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 50px;
   padding-bottom: 0px;
 }
 
@@ -1696,10 +1702,10 @@ section.meetings-page .pagination ul li a:hover {
 	}
 }
 
-/* 
+/*
 ---------------------------------------------
 responsive
---------------------------------------------- 
+---------------------------------------------
 */
 
 @media (max-width: 1300px) {
