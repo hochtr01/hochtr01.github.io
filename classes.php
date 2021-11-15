@@ -1,3 +1,7 @@
+<?php
+    include_once("db_connect.php");   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,10 +24,8 @@
     <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-<!--
-TemplateMo 569 Edu Meeting
-https://templatemo.com/tm-569-edu-meeting
--->
+
+
   </head>
 
 <style>
@@ -102,33 +104,39 @@ table, th, td {
   </section>
 
  <section class="classes-table" id="classes">
-      <table>
+  <h2>Current Courses offered for Spring 2022:</h2>
+  <br />
+      <table border='1' cellspacing='0' cellpadding='10'>
         <tr>
           <th>Code</th>
           <th>Name</th>
           <th>Description</th>
           <th>Prerequisite</th>
         </tr>
-        <tr>
-          <td>CS111</td>
-          <td>Intro to Computer Science I</td>
-          <td>Introduction to computer science with an emphasis on fundamental programming constructs, algorithmic thinking and problem-solving, fundamental data structures, and recursion. Students implement projects using the Java programming language. This course is the usual beginning course for students planning to pursue a major or minor in computer science.</td>
-          <td>None</td>
-        </tr>
-        <tr>
-          <td>CS112</td>
-          <td>Intro to Computer Science II</td>
-          <td>Second course in the introductory sequence for computer science majors and students interested in the principles of programming. Special attention is given to object-oriented program design methods, algorithms, and elementary data structures.</td>
-          <td>CS111</td>
-        </tr>
-        <tr>
-          <td>CS216</td>
-          <td>Data Structures</td>
-          <td> Introduction to major data structures and some of their applications. Topics include sets, queues, stacks, linked lists, string processing, trees, graphs, arrays, tables, files, and an introduction to the analysis of algorithms.</td>
-          <td>CS112</td>
-        </tr>
-      </table>
+        
+        <?php
+          $query = "SELECT * FROM courses;";
 
+          $qResult = $db->query($query);
+       
+          if ($query != false) {
+
+              while ($row = $qResult->fetch()) {
+                $code = $row['code'];
+                $name = $row['name'];
+                $desc = $row['description'];
+                $preq = $row['prerequisites'];
+
+                print "<TR>";
+                print "<TD>$code</TD>";
+                print "<TD>$name</TD>";
+                print "<TD>$desc</TD>";
+                print "<TD>$preq</TD>";
+                print "</TR>\n";
+              }
+          }
+        ?>
+      </table>
 
     <div class="footer">
       <p>Copyright © 2021 CS Web Capstone, All Rights Reserved.</p>
